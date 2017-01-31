@@ -1,0 +1,62 @@
+<!Doctype html>
+ <html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Planets</title>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	    <!-- font -->
+	   		 <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+	    
+	     <!-- Font Awesome -->
+	       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	      <!-- Author Custom CSS 
+	      <link rel="stylesheet" href="style.css"> -->
+	      <!-- jquery -->
+	      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <!-- Latest compiled and minified JavaScript -->
+	   	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body id='background'  background=" ">
+
+		<div class="container">
+			<h1>Type in a planet name</h1>
+			<input type="text" id="planet">
+			<br>
+			<br>
+			<button class="btn btn-warning" onClick="getAnswer()">ENTER</button>
+			<br>
+			<br>
+			<div class="image"><img id='image' class="img-circle" src="img/sun2.gif"><div id="blackCover"></div></div>
+			<br><br><br>
+			<p id="message"></p>
+			<br>
+			<h1 id="funFacts"></h1>
+			<ul id="fun">
+				<li id="diameter"></li>
+				<li id="mass"></li>
+				<li id="moons"></li>
+				<li id="orbitDistance"></li>
+				<li id="orbitPeriod"></li>
+				<li id="temp"></li>
+				<li id="firstRecord"></li>
+			</ul>
+		</div>
+			
+			<div class="right" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"  >
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-expanded="false" style="color: white;" style="background: none;">PLANET LIST <span class="caret"></span></a>
+			<ul class="dropdown-menu" style="background: none;" >
+            <li>mercury</li>
+            <li>venus</li>
+            <li>earth</li>
+            <li>mars</li>
+            <li>jupiter</li>
+            <li>saturn</li>
+            <li>uranus</li>
+            <li>pluto</li>
+         </ul>
+		
+		<script type="text/javascript"  src="js/app.js"></script>
+	</body>
+</html>
